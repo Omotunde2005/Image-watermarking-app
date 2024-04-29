@@ -5,13 +5,13 @@ BACKGROUND = "#219F94"
 
 # Window configuration
 window = Tk()
-window.title("ImageLock")
+window.title("Imagelock")
 window.config(padx=350, pady=100, bg=BACKGROUND)
 
 
 # Watermark Function
 def file():
-    file_name = filedialog.askopenfilename(title="Select an image file")
+    file_name = filedialog.askopenfilename(title="Select an Image file")
     image_text = text_entry.get("1.0", END)
     image_text_num = 0
     if len(image_text) <= 10:
